@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Press+Start+2P&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Nunito", sans-serif;
+    background: #eee9ff;
+    color: #34235c;
+}
+
+button {
+    border: 0;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 800;
+}
+
+input, textarea {
+    font-family: inherit;
+}
+
+.tela {
+    display: none;
+    min-height: 100vh;
+}
+
+.tela.ativa {
+    display: flex;
+}
+
+#login, #cadastro {
+    align-items: center;
+    justify-content: center;
+    background: #cfc6ff;
+}
+
+.login-caixa {
+    width: 350px;
+    padding: 35px;
+    text-align: center;
+    background: #fff;
+    border: 5px solid #7438d8;
+    border-radius: 18px;
+    box-shadow: 8px 8px 0 #51229e;
+}
+
+.logo-pixel {
+    display: inline-block;
+    padding: 15px;
+    margin-bottom: 20px;
+    background: #a36bff;
+    color: #fff;
+    font-family: "Press Start 2P", cursive;
+    font-size: 22px;
+    line-height: 1.5;
+    box-shadow: 5px 5px 0 #51229e;
+}
+
+.logo-pixel span {
+    color: #ffe64a;
+}
+
+.logo-pixel.pequeno {
+    font-size: 13px;
+}
+
+.login-caixa h1 {
+    color: #51229e;
+    margin-bottom: 5px;
+}
+
+.login-caixa p {
+    margin-bottom: 20px;
+}
+
+.login-caixa input {
+    display: block;
+    width: 100%;
+    padding: 13px;
+    margin: 10px 0;
+    border: 2px solid #c5b8ef;
+    border-radius: 8px;
+    outline: none;
+}
+
+.login-caixa input:focus {
+    border-color: #8a48e8;
+}
+
+.login-caixa button,
+header button,
+.card button,
+.jogo button,
+.banner button,
+.feedback button {
+    background: #8a48e8;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.login-caixa button {
+    width: 100%;
+}
+
+.botao-secundario {
+    background: #eee9ff !important;
+    color: #6d36b8 !important;
+}
+
+.site {
+    display: none;
+    min-height: 100vh;
+}
+
+.site.ativo {
+    display: flex;
+}
+
+.menu {
+    width: 220px;
+    min-height: 100vh;
+    padding: 25px 15px;
+    background: #7438d8;
+    border-right: 6px solid #51229e;
+}
+
+.menu .logo-pixel {
+    display: block;
+    text-align: center;
+    margin-bottom: 35px;
+    background: #9c61f1;
+}
+
+.menu button {
+    display: block;
+    width: 100%;
+    padding: 13px;
+    margin: 8px 0;
+    text-align: left;
+    background: transparent;
+    color: white;
+    border-radius: 8px;
+}
+
+.menu button:hover {
+    background: #5d28b1;
+}
+
+.menu .sair {
+    margin-top: 50px;
+    background: #ff719c;
+    text-align: center;
+}
+
+.conteudo {
+    width: 100%;
+    padding: 35px;
+}
+
+.pagina {
+    display: none;
+}
+
+.pagina.ativa {
+    display: block;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+header h1 {
+    font-size: 30px;
+    color: #4f2693;
+}
+
+.mini-titulo {
+    color: #a052d4;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.perfil {
+    background: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-weight: 700;
+}
+
+.banner {
+    min-height: 230px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    overflow: hidden;
+    position: relative;
+    border: 5px solid #7438d8;
+    border-radius: 16px;
+    background: #c9c0ff;
+    box-shadow: 8px 8px 0 #8a48e8;
+}
+
+.banner h2 {
+    margin: 10px 0;
+    color: #4c218e;
+    font-size: 30px;
+}
+
+.banner span {
+    font-weight: 800;
+    color: #e84888;
+}
+
+.cidade {
+    font-size: 65px;
+    display: flex;
+    align-items: end;
+    gap: 5px;
+}
+
+.titulo-secao {
+    margin: 35px 0 15px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.card {
+    min-height: 150px;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    border-top: 10px solid;
+    box-shadow: 4px 5px 0 #c0b5e4;
+}
+
+.card b {
+    font-size: 35px;
+}
+
+.card h3,
+.card h2 {
+    margin: 10px 0 3px;
+}
+
+.card p {
+    color: #766b91;
+}
+
+.verde {
+    border-color: #38c48a !important;
+}
+
+.roxo {
+    border-color: #8a48e8 !important;
+}
+
+.laranja {
+    border-color: #ff9a4a !important;
+}
+
+.azul {
+    border-color: #42a9df !important;
+}
+
+.rosa {
+    border-color: #ed6c9a !important;
+}
+
+.materia {
+    min-height: 230px;
+    text-align: center;
+}
+
+.materia b {
+    font-size: 55px;
+}
+
+.materia button {
+    margin-top: 20px;
+}
+
+.jogos {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.jogo {
+    padding: 15px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 4px 5px 0 #c0b5e4;
+}
+
+.imagem-jogo {
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9px;
+    font-size: 60px;
+    background: #eee9ff;
+}
+
+.jogo h3 {
+    margin-top: 12px;
+}
+
+.jogo p {
+    color: #7b718d;
+}
+
+.tabela {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 5px 5px 0 #c0b5e4;
+}
+
+.linha {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 100px;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 20px;
+    border-bottom: 1px solid #e2dcf2;
+}
+
+.linha.cabecalho {
+    background: #7438d8;
+    color: white;
+}
+
+.linha button {
+    padding: 7px;
+    background: #ff9a4a;
+    color: white;
+    border-radius: 6px;
+}
+
+.feedback {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    text-align: center;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 6px 6px 0 #c0b5e4;
+}
+
+.estrelas {
+    margin: 20px;
+    color: #ffc928;
+    font-size: 35px;
+}
+
+.feedback textarea {
+    width: 100%;
+    height: 130px;
+    padding: 12px;
+    resize: none;
+    border: 2px solid #d5caed;
+    border-radius: 8px;
+}
+
+@media (max-width: 900px) {
+    .cards,
+    .jogos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .menu {
+        width: 180px;
+    }
+}
+
+@media (max-width: 650px) {
+    .site.ativo {
+        display: block;
+    }
+
+    .menu {
+        width: 100%;
+        min-height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    .menu .logo-pixel {
+        width: 100%;
+    }
+
+    .menu button {
+        width: auto;
+        margin: 0;
+    }
+
+    .conteudo {
+        padding: 20px;
+    }
+
+    .cards,
+    .jogos {
+        grid-template-columns: 1fr;
+    }
+
+    header {
+        display: block;
+    }
+
+    .linha {
+        grid-template-columns: 1fr;
+    }
+}

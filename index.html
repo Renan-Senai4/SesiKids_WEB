@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SESI KIDS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- LOGIN -->
+    <section id="login" class="tela ativa">
+        <div class="login-caixa">
+            <div class="logo-pixel">SESI<br><span>KIDS</span></div>
+            <h1>Bem-vindo!</h1>
+            <p>Entre para começar a aprender</p>
+
+            <input type="text" id="usuario" placeholder="Usuário">
+            <input type="password" placeholder="Senha">
+
+            <button onclick="entrar()">ENTRAR</button>
+            <button class="botao-secundario" onclick="mostrar('cadastro')">CRIAR CONTA</button>
+        </div>
+    </section>
+
+    <!-- CADASTRO -->
+    <section id="cadastro" class="tela">
+        <div class="login-caixa">
+            <div class="logo-pixel pequeno">SESI KIDS</div>
+            <h1>Cadastro</h1>
+
+            <input type="text" placeholder="Nome">
+            <input type="text" placeholder="Usuário">
+            <input type="password" placeholder="Senha">
+            <input type="password" placeholder="Confirmar senha">
+
+            <button onclick="entrar()">CADASTRAR</button>
+            <button class="botao-secundario" onclick="mostrar('login')">VOLTAR</button>
+        </div>
+    </section>
+
+    <!-- SITE -->
+    <div id="site" class="site">
+        <aside class="menu">
+            <div class="logo-pixel pequeno">SESI<br>KIDS</div>
+
+            <button onclick="mostrarTela('inicio')">🏠 Início</button>
+            <button onclick="mostrarTela('materias')">📚 Matérias</button>
+            <button onclick="mostrarTela('jogos')">🎮 Jogos</button>
+            <button onclick="mostrarTela('usuarios')">👥 Usuários</button>
+            <button onclick="mostrarTela('feedback')">⭐ Feedback</button>
+
+            <button class="sair" onclick="sair()">SAIR</button>
+        </aside>
+
+        <main class="conteudo">
+
+            <!-- INÍCIO -->
+            <section id="inicio" class="pagina ativa">
+                <header>
+                    <div>
+                        <p class="mini-titulo">SESI KIDS</p>
+                        <h1>Página Inicial</h1>
+                    </div>
+                    <div class="perfil">👧 <span id="nomePerfil">Aluno</span></div>
+                </header>
+
+                <div class="banner">
+                    <div>
+                        <span>LET'S START!</span>
+                        <h2>Aprender pode ser divertido!</h2>
+                        <p>Escolha uma matéria e comece a jogar.</p>
+                        <button onclick="mostrarTela('materias')">COMEÇAR</button>
+                    </div>
+                    <div class="cidade">
+                        <span>☁️</span>
+                        <span>🏫</span>
+                        <span>🌳</span>
+                    </div>
+                </div>
+
+                <h2 class="titulo-secao">Matérias</h2>
+                <div class="cards">
+                    <div class="card verde"><b>🌱</b><h3>Ciências</h3><p>Aprenda brincando</p></div>
+                    <div class="card roxo"><b>🔢</b><h3>Matemática</h3><p>Desafios e contas</p></div>
+                    <div class="card laranja"><b>📖</b><h3>Português</h3><p>Leia e descubra</p></div>
+                    <div class="card azul"><b>🌎</b><h3>História</h3><p>Conheça o passado</p></div>
+                </div>
+            </section>
+
+            <!-- MATÉRIAS -->
+            <section id="materias" class="pagina">
+                <header>
+                    <div>
+                        <p class="mini-titulo">ESCOLHA UMA</p>
+                        <h1>Seleção de Matérias</h1>
+                    </div>
+                </header>
+
+                <div class="cards grandes">
+                    <div class="card materia verde"><b>🌱</b><h2>Ciências</h2><button onclick="mostrarTela('jogos')">JOGAR</button></div>
+                    <div class="card materia roxo"><b>🔢</b><h2>Matemática</h2><button onclick="mostrarTela('jogos')">JOGAR</button></div>
+                    <div class="card materia laranja"><b>📖</b><h2>Português</h2><button onclick="mostrarTela('jogos')">JOGAR</button></div>
+                    <div class="card materia azul"><b>🌎</b><h2>História</h2><button onclick="mostrarTela('jogos')">JOGAR</button></div>
+                </div>
+            </section>
+
+            <!-- JOGOS -->
+            <section id="jogos" class="pagina">
+                <header>
+                    <div>
+                        <p class="mini-titulo">DIVIRTA-SE</p>
+                        <h1>Jogos Educativos</h1>
+                    </div>
+                </header>
+
+                <div class="cards jogos">
+                    <div class="jogo">
+                        <div class="imagem-jogo verde">🧬</div>
+                        <h3>Replicação</h3>
+                        <p>Biologia</p>
+                        <button>JOGAR</button>
+                    </div>
+                    <div class="jogo">
+                        <div class="imagem-jogo laranja">🔬</div>
+                        <h3>Descobrindo</h3>
+                        <p>Ciências</p>
+                        <button>JOGAR</button>
+                    </div>
+                    <div class="jogo">
+                        <div class="imagem-jogo azul">➗</div>
+                        <h3>Desafio dos Números</h3>
+                        <p>Matemática</p>
+                        <button>JOGAR</button>
+                    </div>
+                    <div class="jogo">
+                        <div class="imagem-jogo roxo">📚</div>
+                        <h3>Palavras</h3>
+                        <p>Português</p>
+                        <button>JOGAR</button>
+                    </div>
+                    <div class="jogo">
+                        <div class="imagem-jogo rosa">🧠</div>
+                        <h3>Quiz Kids</h3>
+                        <p>Conhecimentos gerais</p>
+                        <button>JOGAR</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- USUÁRIOS -->
+            <section id="usuarios" class="pagina">
+                <header>
+                    <div>
+                        <p class="mini-titulo">ADMINISTRAÇÃO</p>
+                        <h1>Usuários</h1>
+                    </div>
+                    <button onclick="alert('Formulário de novo usuário')">+ NOVO USUÁRIO</button>
+                </header>
+
+                <div class="tabela">
+                    <div class="linha cabecalho"><b>Nome</b><b>Usuário</b><b>Matéria</b><b>Ação</b></div>
+                    <div class="linha"><span>Ana</span><span>ana01</span><span>Ciências</span><button>EDITAR</button></div>
+                    <div class="linha"><span>Pedro</span><span>pedro02</span><span>Matemática</span><button>EDITAR</button></div>
+                    <div class="linha"><span>Lucas</span><span>lucas03</span><span>Português</span><button>EDITAR</button></div>
+                </div>
+            </section>
+
+            <!-- FEEDBACK -->
+            <section id="feedback" class="pagina">
+                <header>
+                    <div>
+                        <p class="mini-titulo">CONTE PARA NÓS</p>
+                        <h1>Feedback</h1>
+                    </div>
+                </header>
+
+                <div class="feedback">
+                    <h2>Gostou do jogo?</h2>
+                    <div class="estrelas">★ ★ ★ ★ ★</div>
+                    <textarea placeholder="Escreva sua opinião..."></textarea>
+                    <button onclick="alert('Feedback enviado!')">ENVIAR FEEDBACK</button>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
